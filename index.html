@@ -1,95 +1,295 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erik Strömberg | Developer</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duck Type LLC · Independent software studio</title>
+<meta name="description" content="Duck Type LLC is an independent software studio that designs, builds and publishes mobile apps, including Yatzy Pop! and Cowboy for Herdr.">
+<link rel="canonical" href="https://ducktype.tech/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Duck Type LLC">
+<meta property="og:title" content="Duck Type LLC · Independent software studio">
+<meta property="og:description" content="We design, build and publish phone apps that do one job, and do it properly.">
+<meta property="og:url" content="https://ducktype.tech/">
+<meta property="og:image" content="https://ducktype.tech/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f3eee3">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/hanken-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<!--email_off-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ducktype.tech/#org",
+      "name": "Duck Type",
+      "legalName": "Duck Type LLC",
+      "url": "https://ducktype.tech/",
+      "logo": "https://ducktype.tech/apple-touch-icon.png",
+      "email": "erik@ducktype.tech",
+      "founder": { "@type": "Person", "name": "Erik Strömberg" },
+      "contactPoint": [
+        { "@type": "ContactPoint", "contactType": "customer support", "email": "support@ducktype.tech", "url": "https://ducktype.tech/support" }
+      ]
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Yatzy Pop!",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "iOS, iPadOS, Android",
+      "url": "https://yatzy.ducktype.tech/",
+      "publisher": { "@id": "https://ducktype.tech/#org" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "sameAs": [
+        "https://apps.apple.com/app/id6795656496",
+        "https://play.google.com/store/apps/details?id=tech.ducktype.yatzy"
+      ]
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Cowboy for Herdr",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "iOS",
+      "url": "https://cowboy.ducktype.tech/",
+      "publisher": { "@id": "https://ducktype.tech/#org" }
+    }
+  ]
+}
+</script>
+<!--/email_off-->
 </head>
 <body>
-    <main>
-        <header>
-            <h1>&gt; erik strömberg_</h1>
-            <p class="subtitle">full-stack developer | blockchain engineer</p>
-        </header>
 
-        <section id="about">
-            <h2>&gt; /about</h2>
-            <p>Full-stack developer with extensive experience in Rust, Clojure, Ruby, and JavaScript ecosystems. 
-               Specialized in blockchain development, distributed systems, and data processing at scale.</p>
-        </section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="duck" viewBox="5 8 58 51">
+    <path fill="currentColor" d="M7 29l9 6h19a13 13 0 1 1 15.5-12.7V35c4.4 1.7 7.5 6 7.5 10.9C58 52.6 52.6 58 45.9 58H24C14.6 58 7 50.4 7 41z"/>
+    <path style="fill:var(--bill)" d="M49 18h8.5c2.5 0 4.5 1.8 4.5 4s-2 4-4.5 4H49z"/>
+    <circle style="fill:var(--paper)" cx="41.5" cy="19" r="2.6"/>
+  </symbol>
+</svg>
 
-        <section id="skills">
-            <h2>&gt; /skills</h2>
-            <div class="skill-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>Rust</li>
-                        <li>Clojure</li>
-                        <li>Ruby</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Technologies</h3>
-                    <ul>
-                        <li>Solana</li>
-                        <li>React</li>
-                        <li>Rails</li>
-                        <li>ElasticSearch</li>
-                        <li>RabbitMQ</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <ul>
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                        <li>RethinkDB</li>
-                        <li>Cassandra</li>
-                    </ul>
-                </div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="/" aria-label="Duck Type LLC, home">
+      <svg aria-hidden="true"><use href="#duck"/></svg>
+      <span class="brand-name">Duck Type</span><span class="brand-llc">LLC</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#apps">apps</a>
+      <a href="#company" class="nav-optional">company</a>
+      <a href="/support">support</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow rise">Duck Type LLC · independent software studio</div>
+        <h1 id="hero-title" class="rise rise-2">Phone apps that do one job, and do it <em>properly.</em></h1>
+        <p class="lede rise rise-3">Duck Type LLC is an independent software studio. <strong>We design, build and publish apps for iPhone and Android</strong>: right now, a dice game for the kitchen table and a remote view of the coding agents on your computer.</p>
+        <div class="hero-actions rise rise-4">
+          <a class="btn" href="#apps">See our apps</a>
+          <a class="text-link" href="#company">About the company</a>
+        </div>
+      </div>
+
+      <aside class="specimen rise rise-5" aria-label="Where the name comes from">
+        <div class="specimen-top eyebrow"><span>Where the name comes from</span><span>p. 1</span></div>
+        <p class="headword">duck typing</p>
+        <p class="pron">/ˈdʌk ˌtaɪ.pɪŋ/ &nbsp;<i>noun</i></p>
+        <ol>
+          <li>In programming: judging a thing by what it does rather than what it claims to be. If it walks like a duck and quacks like a duck, it is a duck.</li>
+          <li>The one test we hold our apps to.</li>
+        </ol>
+        <svg class="specimen-duck" aria-hidden="true"><use href="#duck"/></svg>
+      </aside>
+    </section>
+
+    <div class="hero-strip rise rise-5" aria-hidden="true">
+      <span>Duck Type LLC</span>
+      <span>iPhone · iPad · Android</span>
+      <span>2 apps · 0 ads · 0 trackers</span>
+    </div>
+  </div>
+
+  <!-- ============ apps ============ -->
+  <section id="apps" class="section" aria-labelledby="apps-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">§ 01 · The apps</div>
+          <h2 id="apps-title">What we make</h2>
+        </div>
+        <p>Two apps, both designed, built and supported by Duck Type LLC. Each one has its own website, privacy policy and support page.</p>
+      </div>
+
+      <article class="app" aria-labelledby="yatzy-title">
+        <div class="app-copy">
+          <div class="app-index eyebrow"><span>No. 01 · Game</span><span class="app-num">01/02</span></div>
+          <div class="app-title">
+            <img class="app-icon" src="/assets/img/yatzy-icon.webp" alt="Yatzy Pop! app icon" width="76" height="76">
+            <div>
+              <h3 id="yatzy-title">Yatzy Pop!</h3>
             </div>
-        </section>
+          </div>
+          <p class="app-tagline">Scandinavian Yatzy, rebuilt for your thumb.</p>
+          <p class="body">The dice game everyone already knows, with the arithmetic done for you. Every open box shows what it is worth before you pick it, and the bonus keeps track of itself. Play alone against your best score or a computer opponent, pass the phone around the table for up to four players, or play friends online at your own pace.</p>
+          <dl class="specs">
+            <dt>Status</dt><dd><span class="status">Available now</span></dd>
+            <dt>Platforms</dt><dd>iPhone, iPad and Android</dd>
+            <dt>Price</dt><dd>Free, with no ads</dd>
+            <dt>Languages</dt><dd>English and Swedish</dd>
+          </dl>
+          <div class="app-actions">
+            <a class="btn" href="https://apps.apple.com/app/id6795656496" rel="noopener">App Store</a>
+            <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=tech.ducktype.yatzy" rel="noopener">Google Play</a>
+          </div>
+          <div class="app-links">
+            <a class="text-link" href="https://yatzy.ducktype.tech/">yatzy.ducktype.tech ↗</a>
+            <a class="text-link" href="https://yatzy.ducktype.tech/privacy">privacy policy</a>
+            <a class="text-link" href="/support#yatzy">support</a>
+          </div>
+        </div>
+        <div class="app-stage stage-yatzy">
+          <div class="die die-5" aria-hidden="true"></div>
+          <div class="die die-3" aria-hidden="true"></div>
+          <div class="phone">
+            <img src="/assets/img/yatzy-screen.webp" width="600" height="1304" loading="lazy" alt="Yatzy Pop! mid-game: the score card lights up the boxes the current dice would score, with five dice and the roll button below.">
+          </div>
+        </div>
+      </article>
 
-        <section id="projects">
-            <h2>&gt; /projects</h2>
-            <div class="project">
-                <h3>clj-rethinkdb</h3>
-                <p>A Clojure client for RethinkDB with support for async queries.</p>
-                <a href="https://github.com/apa512/clj-rethinkdb" target="_blank">github.com/apa512/clj-rethinkdb</a>
+      <article class="app" aria-labelledby="cowboy-title">
+        <div class="app-copy">
+          <div class="app-index eyebrow"><span>No. 02 · Developer tool</span><span class="app-num">02/02</span></div>
+          <div class="app-title">
+            <img class="app-icon" src="/assets/img/cowboy-icon.webp" alt="Cowboy for Herdr app icon" width="76" height="76">
+            <div>
+              <h3 id="cowboy-title">Cowboy for Herdr</h3>
             </div>
-        </section>
+          </div>
+          <p class="app-tagline">Does any agent need me? Answered from your phone.</p>
+          <p class="body">For developers who run AI coding agents in Herdr. Cowboy connects to your own computer over SSH and shows every agent's status and latest output, with the ones waiting for an answer at the top. It stays read-only until you switch input on, and it has no account, no cloud relay and no analytics.</p>
+          <dl class="specs">
+            <dt>Status</dt><dd><span class="status soon">Coming soon to the App Store</span></dd>
+            <dt>Platforms</dt><dd>iPhone, with Android planned</dd>
+            <dt>Requires</dt><dd>Herdr on a computer you can reach over SSH</dd>
+            <dt>Data</dt><dd>Nothing collected, nothing leaves your devices</dd>
+          </dl>
+          <div class="app-actions">
+            <span class="btn btn-off" aria-disabled="true">App Store <small>soon</small></span>
+          </div>
+          <div class="app-links">
+            <a class="text-link" href="https://cowboy.ducktype.tech/">cowboy.ducktype.tech ↗</a>
+            <a class="text-link" href="https://cowboy.ducktype.tech/privacy">privacy policy</a>
+            <a class="text-link" href="/support#cowboy">support</a>
+          </div>
+        </div>
+        <div class="app-stage stage-cowboy">
+          <div class="term-line" aria-hidden="true"><span class="g">studio</span> <span class="f">❯</span> 5 agents <span class="f">·</span> <span class="r">1 blocked</span><span class="cursor"></span></div>
+          <div class="phone">
+            <img src="/assets/img/cowboy-screen.webp" width="600" height="1304" loading="lazy" alt="The Cowboy home screen: one agent highlighted in red is waiting for an answer, followed by finished, working and idle agents.">
+          </div>
+          <div class="term-tags" aria-hidden="true"><span>read-only by default</span><span>ssh, no cloud</span><span>no account</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
 
-        <section id="experience">
-            <h2>&gt; /experience</h2>
-            <div class="timeline">
-                <div class="job">
-                    <span class="year">2024</span>
-                    <h3>PEZ.fun</h3>
-                    <p>Co-founder</p>
-                </div>
-                <div class="job">
-                    <span class="year">2021-2024</span>
-                    <h3>Contribute.xyz</h3>
-                    <p>Solana blockchain development, React front-end, Node.js services</p>
-                </div>
-                <div class="job">
-                    <span class="year">2020-2021</span>
-                    <h3>Qualifier.ai</h3>
-                    <p>Full-stack Ruby on Rails development</p>
-                </div>
-            </div>
-        </section>
+  <!-- ============ company ============ -->
+  <section id="company" class="section" aria-labelledby="company-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">§ 02 · The company</div>
+          <h2 id="company-title">Who we are</h2>
+        </div>
+        <p>A small software company with a narrow focus: a few apps, built with care and looked after for the long run.</p>
+      </div>
 
-        <footer>
-            <h2>&gt; /contact</h2>
-            <p><a href="mailto:erik@ducktype.tech">erik@ducktype.tech</a></p>
-            <p><a href="https://github.com/apa512" target="_blank">github.com/apa512</a></p>
-        </footer>
-    </main>
+      <div class="company">
+        <div class="company-copy">
+          <p>Duck Type LLC makes apps for people to use every day, and distributes them through the App Store and Google Play.</p>
+          <p>The company was founded by Erik Strömberg, a full-stack developer who spent years building web, data and blockchain systems for other companies. Duck Type is where that experience goes into products of our own.</p>
+          <p>Design, development, publishing and support all happen in-house, so a support email reaches the people who built the app.</p>
+
+          <ol class="principles">
+            <li><div><b>No ads, no tracking.</b><span>Neither of our apps shows advertising or contains analytics or tracking SDKs.</span></div></li>
+            <li><div><b>Your data stays yours.</b><span>We keep only what a feature needs, never sell it, and let you delete it from inside the app.</span></div></li>
+            <li><div><b>Supported for real.</b><span>Every app has a support page, a privacy policy and an email address that a person answers.</span></div></li>
+          </ol>
+        </div>
+
+        <aside class="facts" aria-labelledby="facts-title">
+          <h3 id="facts-title">Company details</h3>
+          <div class="eyebrow">For partners, platforms and press</div>
+          <!--email_off-->
+          <dl>
+            <dt>Legal name</dt><dd>Duck Type LLC</dd>
+            <dt>Entity type</dt><dd>Limited liability company</dd>
+            <dt>Registered in</dt><dd>New Mexico, United States</dd>
+            <dt>Founder</dt><dd>Erik Strömberg</dd>
+            <dt>Business</dt><dd>Design, development and publishing of mobile apps</dd>
+            <dt>Products</dt><dd>Yatzy Pop!, Cowboy for Herdr</dd>
+            <dt>Website</dt><dd><a href="https://ducktype.tech/">ducktype.tech</a></dd>
+            <dt>General</dt><dd><a href="mailto:erik@ducktype.tech">erik@ducktype.tech</a></dd>
+            <dt>App support</dt><dd><a href="mailto:support@ducktype.tech">support@ducktype.tech</a></dd>
+          </dl>
+          <!--/email_off-->
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ contact ============ -->
+  <section id="contact" class="section contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact-card">
+        <svg class="contact-duck" aria-hidden="true"><use href="#duck"/></svg>
+        <div>
+          <div class="eyebrow">§ 03 · Contact</div>
+          <h2 id="contact-title">Write to us.</h2>
+          <p>We read everything. For help with an app, tell us which app, which device and which version of iOS or Android you are on.</p>
+        </div>
+        <!--email_off-->
+        <div class="contact-list">
+          <a href="mailto:erik@ducktype.tech"><small>Business, partnerships, press</small><span>erik@ducktype.tech</span></a>
+          <a href="mailto:support@ducktype.tech"><small>Help with Yatzy Pop! or Cowboy</small><span>support@ducktype.tech</span></a>
+        </div>
+        <!--/email_off-->
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="foot-brand"><svg aria-hidden="true"><use href="#duck"/></svg><b>Duck Type LLC</b></div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="/#apps">Apps</a>
+        <a href="/#company">Company</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy policy</a>
+        <a href="/terms">Terms of use</a>
+      </nav>
+    </div>
+    <p class="foot-legal">© 2026 Duck Type LLC. All rights reserved. Yatzy Pop! and Cowboy for Herdr are products of Duck Type LLC. Herdr is a separate product and is not made by Duck Type LLC. Apple, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions; App Store is a service mark of Apple Inc. Android and Google Play are trademarks of Google LLC.</p>
+  </div>
+</footer>
+
 </body>
-</html> 
+</html>
