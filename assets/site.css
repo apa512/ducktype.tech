@@ -121,8 +121,6 @@ a { color: inherit; }
 .btn small { font: 500 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; opacity: .7; }
 .btn-line { background: transparent; color: var(--ink); box-shadow: none; }
 .btn-line:hover { background: var(--ink); color: var(--card); box-shadow: none; }
-.btn-off { background: transparent; color: var(--ink-faint); border-color: var(--rule); box-shadow: none; cursor: default; }
-.btn-off:hover { transform: none; box-shadow: none; }
 
 .text-link {
   font: 500 14px/1 var(--mono);
